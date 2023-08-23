@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import { ProductContext } from "../contexts/ProductContext";
 import Product from "../components/Product";
+import Hero from "../components/Hero";
 
 function Home() {
   // get product from product context
@@ -16,6 +17,7 @@ function Home() {
 
   return (
     <div>
+      <Hero />
       <section className=" py-16">
         <div className=" container mx-auto p-10 grid gap-5 grid-cols-1 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-5">
           {/* map through the array of items */}
